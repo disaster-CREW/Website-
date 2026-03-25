@@ -1,16 +1,20 @@
 const express = require("express");
+const path = require("path");
 const app = express();
 
 // Home page
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "index.html"));
+});
 
 // Terms of Service
 app.get("/tos", (req, res) => {
-  res.send("Terms of Service page");
+  res.sendFile(path.join(__dirname, "tos.html"));
 });
 
 // Privacy Policy
 app.get("/privacy", (req, res) => {
-  res.send("Privacy Policy page");
+  res.sendFile(path.join(__dirname, "privacy.html"));
 });
 
 // Start the server
