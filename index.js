@@ -8,12 +8,12 @@ app.get("/", (req, res) => {
 });
 
 // Terms of Service
-app.get("/tos", (req, res) => {
+app.get("/tos.html", (req, res) => {
   res.sendFile(path.join(__dirname, "tos.html"));
 });
 
 // Privacy Policy
-app.get("/privacy", (req, res) => {
+app.get("/privacy.html", (req, res) => {
   res.sendFile(path.join(__dirname, "privacy.html"));
 });
 
