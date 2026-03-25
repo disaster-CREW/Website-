@@ -2,9 +2,6 @@ const express = require("express");
 const app = express();
 
 // Home page
-app.get("/", (req, res) => {
-  res.send("ASTRYX Website is Online");
-});
 
 // Terms of Service
 app.get("/tos", (req, res) => {
