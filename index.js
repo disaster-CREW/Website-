@@ -1,23 +1,32 @@
-const express = require("express");
-const path = require("path");
+import express from "express";
+import path from "path";
+import { fileURLToPath } from "url";
+
 const app = express();
+
+// Fix __dirname for ESM
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Serve CSS, images, etc.
+app.use(express.static(__dirname));
 
 // Home page
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "index.html"));
 });
 
-// Terms of Service
-app.get("/tos.html", (req, res) => {
+// Clean URL: /tos
+app.get("/tos", (req, res) => {
   res.sendFile(path.join(__dirname, "tos.html"));
 });
 
-// Privacy Policy
-app.get("/privacy.html", (req, res) => {
+// Clean URL: /privacy
+app.get("/privacy", (req, res) => {
   res.sendFile(path.join(__dirname, "privacy.html"));
 });
 
-// Start the server
-app.listen(3000, () => {
-  console.log("Website running on port 3000");
+// Start server
+app.listen(process.env.PORT || 3000, () => {
+  console.log("ASTRYX website is running");
 });
