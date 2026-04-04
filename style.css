@@ -29,7 +29,7 @@ p {
   margin-top: 20px;
   padding: 12px 24px;
   background: #5865F2;
-  color: white;
+  color: white; /* THIS makes the text visible */
   border-radius: 8px;
   text-decoration: none;
   font-size: 18px;
