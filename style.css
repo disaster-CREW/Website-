@@ -55,21 +55,32 @@ footer {
 }
 
 /* ----------------------------- */
-/* LINK COLOUR FIX (THE IMPORTANT PART) */
+/* LINK STYLING (TOS / PRIVACY) */
 /* ----------------------------- */
 
+.card a {
+  display: block;
+  margin: 10px 0;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Normal link */
 a:link {
-  color: #5865F2; /* blue */
+  color: #5865F2;
 }
 
+/* Force visited links back to blue */
 a:visited {
-  color: #5865F2; /* force back to blue when returning */
+  color: #5865F2;
 }
 
+/* Hover */
 a:hover {
   color: #4752C4;
 }
 
+/* Click flash */
 a:active {
-  color: purple; /* flash purple when clicked */
+  color: purple;
 }
