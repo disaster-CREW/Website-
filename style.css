@@ -53,3 +53,23 @@ footer {
   margin: 40px 0;
   opacity: 0.5;
 }
+
+/* ----------------------------- */
+/* LINK COLOUR FIX (THE IMPORTANT PART) */
+/* ----------------------------- */
+
+a:link {
+  color: #5865F2; /* blue */
+}
+
+a:visited {
+  color: #5865F2; /* force back to blue when returning */
+}
+
+a:hover {
+  color: #4752C4;
+}
+
+a:active {
+  color: purple; /* flash purple when clicked */
+}
