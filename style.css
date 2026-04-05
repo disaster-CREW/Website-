@@ -25,7 +25,7 @@ p {
 }
 
 /* ----------------------------- */
-/* BUTTON (Invite Bot)           */
+/* INVITE BUTTON                 */
 /* ----------------------------- */
 
 .btn {
@@ -43,6 +43,29 @@ p {
 
 .btn:hover {
   background: #4752C4;
+}
+
+/* ----------------------------- */
+/* BACK ICON BUTTON              */
+/* ----------------------------- */
+
+.back-icon {
+  display: inline-block;
+  margin: 20px;
+  padding: 8px 14px;
+  background: #1e1f22;
+  border: 2px solid #5865F2;
+  color: #5865F2;
+  border-radius: 6px;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.back-icon:hover {
+  background: #5865F2;
+  color: white;
 }
 
 /* ----------------------------- */
