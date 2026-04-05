@@ -24,21 +24,30 @@ p {
   font-size: 18px;
 }
 
+/* ----------------------------- */
+/* BUTTON (Invite Bot)           */
+/* ----------------------------- */
+
 .btn {
   display: inline-block;
   margin-top: 20px;
   padding: 12px 24px;
   background: #5865F2;
-  color: white;
+  color: #ffffff !important;
   border-radius: 8px;
-  text-decoration: none;
+  text-decoration: none !important;
   font-size: 18px;
+  font-weight: 600;
   transition: 0.2s;
 }
 
 .btn:hover {
   background: #4752C4;
 }
+
+/* ----------------------------- */
+/* CARD SECTIONS                 */
+/* ----------------------------- */
 
 .card {
   background: #1e1f22;
